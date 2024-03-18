@@ -2,7 +2,6 @@
 
 /* 전체적인 프레임 */
 .react-calendar {
-    width: 350px;
     max-width: 100%;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
