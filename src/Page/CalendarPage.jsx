@@ -2,9 +2,26 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import moment from "moment";
 import "./calendar.css";
+import catfoot from "../Img/catfoot.svg";
 
 function CalendarPage() {
   const [value, onChange] = useState(new Date());
+  const dayList = ["2024-03-19"];
+
+  const addContent = ({ date, view }) => {
+    const content = [];
+    if (dayList.find((x) => x === moment(date).format("YYYY-MM-DD"))) {
+      content.push(<img src={catfoot} alt="" />);
+      return (
+        <>
+          <div className="flex justify-center items-center absoluteDiv">
+            {content}
+          </div>
+        </>
+      );
+    }
+  };
+
   return (
     <div>
       <Calendar
@@ -14,6 +31,7 @@ function CalendarPage() {
         prev2Label={null}
         onChange={onChange}
         value={value}
+        tileContent={addContent}
       />
     </div>
   );
