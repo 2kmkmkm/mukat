@@ -14,9 +14,7 @@ function CalendarPage() {
       content.push(<img src={catfoot} alt="" />);
       return (
         <>
-          <div className="flex justify-center items-center absoluteDiv">
-            {content}
-          </div>
+          <div>{content}</div>
         </>
       );
     }
