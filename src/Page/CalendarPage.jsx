@@ -30,6 +30,7 @@ function CalendarPage() {
         onChange={onChange}
         value={value}
         tileContent={addContent}
+        minDetail="year"
       />
     </div>
   );

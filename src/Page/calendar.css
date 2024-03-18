@@ -68,6 +68,13 @@
     background-color: #ffffff;
 }
 
+/* 화살표 */
+.react-calendar__navigation__arrow {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
 /* 요일 */
 .react-calendar__month-view__weekdays {
     padding-bottom: 10px;
@@ -128,13 +135,15 @@
 
 .react-calendar__tile {
     max-width: 100%;
-    padding: 10px 10px 60px;
+    padding: 10px 10px 70px;
     background: none;
     text-align: center;
     font-size: 1em;
+    border-radius: 1.25em;
     abbr {
         font-family: "Pretendard-Meidum";
         font-style: bold;
+        font-size: 15px;
     }
     
 }
@@ -158,7 +167,6 @@
 /* 현재 날짜 */
 .react-calendar__tile--now {
     background: #ffb69D;
-    
 }
 
 
@@ -189,6 +197,7 @@
 
 .react-calendar--selectRange .react-calendar__tile--hover {
     background-color: #e6e6e6;
+    
 }
 
 .catfoot {
